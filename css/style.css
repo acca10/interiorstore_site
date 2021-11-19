@@ -78,9 +78,11 @@ img {
   z-index: 20;
   opacity: 0;
 }
+
 #navi a {
   color: #fff;
 }
+
 #navi li {
   margin-bottom: 14px;
 }
@@ -233,7 +235,6 @@ img {
 #item {
   max-width: 800px;
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   margin-bottom: 60px;
 }
@@ -266,6 +267,7 @@ img {
 #footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -277,8 +279,8 @@ img {
 }
 
 #footer li {
-  font-size: 0.75rem;
-  margin-right: 30px;
+  font-size: 1.25rem;
+  padding: 0 17px;
 }
 
 #footer p {
@@ -286,10 +288,9 @@ img {
 }
 
 /* SP */
-@media screen and( max-width: 900px) {
+@media screen and ( max-width: 900px) {
   #item {
     flex-direction: column;
-    justify-content: flex-start;
   }
   #item .item-text {
     width: 100%;
